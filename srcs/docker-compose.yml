@@ -30,17 +30,7 @@ services:
     restart: always
 volumes:
   DB:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /home/gcorreia/data/DB/
   wordpress_files:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /home/gcorreia/data/wordpress_files/
 networks:
   inception-network:
     name: inception-network
