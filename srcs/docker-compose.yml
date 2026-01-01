@@ -28,6 +28,12 @@ services:
     ports:
       - "443:443"
     restart: always
+  phpmyadmin:
+    image: phpmyadmin
+    env_file: .env
+    networks:
+      - inception-network
+    restart: always
 volumes:
   DB:
   wordpress_files:
